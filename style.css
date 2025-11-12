@@ -5,21 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Body Styling - Clean and Professional Look */
+/* Body Styling - Dark Theme Look */
 body {
-    font-family: 'Inter', sans-serif; /* Changed Font */
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    color: #f0f0f0; /* Light text color for dark background */
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-color: #f5f7fa; /* Light Blue-Gray Background */
+    background-color: #1a1a1a; /* Very dark background */
     min-height: 100vh;
 }
 
 .app-title {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #007bff; /* Primary Blue */
+    color: #4da6ff; /* Primary blue/light blue for contrast */
     margin-bottom: 20px;
     text-align: center;
     padding: 0 10px;
@@ -34,15 +34,15 @@ body {
 }
 
 .document-editor {
-    background: #ffffff;
-    padding: 2rem; /* Increased padding */
-    border-radius: 12px; /* Added rounded corners */
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* Improved shadow */
+    background: #2c2c2c; /* Darker panel background */
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #444; /* Darker border */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5); /* Stronger shadow for depth */
     width: 100%;
-    font-family: 'Times New Roman', serif; /* Kept for document content */
+    font-family: 'Times New Roman', serif;
     font-size: 14pt;
-    color: #000;
+    color: #f0f0f0; /* Document text color is light */
 }
 
 .document-header {
@@ -51,7 +51,7 @@ body {
     align-items: center;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #f0f0f0; /* Subtle separator */
+    border-bottom: 2px solid #3a3a3a; /* Subtle separator for dark mode */
 }
 
 .document-question-area {
@@ -59,34 +59,60 @@ body {
 }
 
 .doc-input {
-    font-family: 'Inter', sans-serif; /* Changed Font for input fields */
-    font-size: 1rem; /* Smaller font for better form look */
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
     border: none;
-    border-bottom: 2px solid #ccc; /* Solid border bottom */
-    background: transparent;
+    border-bottom: 2px solid #555; /* Visible border bottom */
+    background: #3c3c3c; /* Dark input background */
+    color: #f0f0f0; /* Input text color */
     padding: 4px 0;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
     font-weight: 600;
-    color: #333;
     margin: 0 0.5rem;
+    border-radius: 4px 4px 0 0;
+    padding-left: 5px;
+}
+.doc-input::placeholder {
+    color: #aaa;
 }
 .doc-input:focus {
-    border-bottom: 2px solid #007bff;
-    box-shadow: 0 2px 0 rgba(0, 123, 255, 0.2);
+    border-bottom: 2px solid #4da6ff; /* Accent color on focus */
+    background-color: #444;
+    box-shadow: 0 2px 0 rgba(77, 166, 255, 0.2);
 }
 /* Ensure inputs take up space responsively */
 #studentId { text-align: left; flex: 1.5; }
 #journalNumber { text-align: center; flex: 1; }
 #studentName { text-align: right; flex: 2; }
-#questionSelect { width: 100%; font-weight: 600; font-size: 1rem; margin: 0; padding: 0.5rem 0; color: #007bff;}
+#questionSelect { 
+    width: 100%; 
+    font-weight: 600; 
+    font-size: 1rem; 
+    margin: 0; 
+    padding: 0.5rem 0; 
+    color: #4da6ff; /* Text color for dropdown */
+    background: #3c3c3c; /* Background for dropdown */
+}
+#journalNumber, #questionSelect {
+    /* Style for select elements */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f0f0f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 0.65em auto;
+    padding-right: 2rem;
+}
+
 
 .document-content-area .content-header {
     margin-bottom: 0.5rem;
 }
 .form-description {
-    font-size: 0.9rem; /* Smaller, cleaner description */
-    color: #6c757d; /* Muted gray */
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Light gray description */
     font-family: 'Inter', sans-serif;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -95,18 +121,18 @@ body {
 /* Upload Area Styling */
 .upload-item {
     position: relative;
-    border: 2px dashed #b8c0c9; /* Muted dashed border */
+    border: 2px dashed #666; /* Muted dashed border for dark theme */
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
-    background-color: #fcfcfc;
+    background-color: #333; /* Dark upload item background */
     margin-bottom: 1rem;
 }
 .upload-item:hover, .upload-item.dragover {
-    border-color: #007bff;
-    background-color: #e6f7ff;
+    border-color: #4da6ff; /* Accent color on hover */
+    background-color: #3a3a3a;
 }
 .upload-item.dragover {
     transform: scale(1.02);
@@ -115,12 +141,12 @@ body {
 .upload-icon {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    opacity: 0.6;
-    color: #007bff;
+    opacity: 0.8;
+    color: #4da6ff;
 }
 .upload-text {
     font-family: 'Inter', sans-serif;
-    color: #6c757d;
+    color: #ccc;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -128,27 +154,27 @@ body {
 
 .upload-item.file-selected {
     border-style: solid;
-    border-color: #28a745;
-    background-color: #e9f5e8;
+    border-color: #5cb85c; /* Success green for dark theme */
+    background-color: #3a4a3a;
 }
 .upload-item.file-selected .upload-icon {
-    color: #28a745;
+    color: #5cb85c;
     opacity: 1;
 }
 .upload-item.file-selected .upload-text {
-    color: #1a5e27;
+    color: #fff;
     font-weight: 600;
 }
 
 .delete-upload-btn {
     position: absolute;
-    top: -5px; /* Moved slightly out */
-    right: -5px; /* Moved slightly out */
+    top: -5px;
+    right: -5px;
     width: 24px;
     height: 24px;
-    background-color: #ff3333; /* Red color */
+    background-color: #e74c3c; /* Red color */
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #2c2c2c; /* Border matches panel */
     border-radius: 50%;
     cursor: pointer;
     font-size: 16px;
@@ -159,11 +185,11 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .delete-upload-btn:hover {
-    background-color: #cc0000;
+    background-color: #c0392b;
     transform: scale(1.2);
 }
 
@@ -178,16 +204,16 @@ body {
     padding-top: 2rem;
     width: 100%;
     text-align: center;
-    border-top: 2px solid #f0f0f0;
+    border-top: 2px solid #3a3a3a;
     margin-top: 2rem;
 }
 
 .btn-group {
     display: flex;
-    gap: 0.75rem; /* Reduced gap */
+    gap: 0.75rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.5rem; /* Reduced margin */
+    margin-top: 1.5rem;
 }
 .btn {
     padding: 0.75rem 1.5rem;
@@ -203,40 +229,41 @@ body {
     justify-content: center;
     gap: 0.5rem;
     color: #ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 .btn:disabled {
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: not-allowed;
     transform: none !important;
     box-shadow: none;
-    background-color: #c9cdd2 !important;
+    background-color: #555 !important;
+    color: #aaa;
 }
 
-/* Updated Button Colors */
-.btn-primary { background-color: #007bff; } /* Bright Blue */
-.btn-primary:hover { background-color: #0056b3; }
+/* Updated Button Colors for Dark Theme */
+.btn-primary { background-color: #4da6ff; } /* Accent Blue */
+.btn-primary:hover { background-color: #2e8ae8; }
 
-.btn-word { background-color: #2c6eb5; } /* Microsoft Blue */
-.btn-word:hover { background-color: #1f508a; }
+.btn-word { background-color: #3498db; } /* Lighter MS Blue */
+.btn-word:hover { background-color: #2980b9; }
 
-.btn-pdf { background-color: #c0392b; } /* Adobe Red */
-.btn-pdf:hover { background-color: #a92c20; }
+.btn-pdf { background-color: #e74c3c; } /* Lighter Adobe Red */
+.btn-pdf:hover { background-color: #c0392b; }
 
-.btn-secondary { background-color: #6c757d; }
-.btn-secondary:hover { background-color: #5a6268; }
+.btn-secondary { background-color: #7f8c8d; } /* Muted gray */
+.btn-secondary:hover { background-color: #6c757d; }
 
-.btn-success { background-color: #28a745; }
-.btn-success:hover { background-color: #1e7e34; }
+.btn-success { background-color: #5cb85c; } /* Success Green */
+.btn-success:hover { background-color: #449d44; }
 
 .btn-subtle {
-    background-color: #e9ecef; /* Light gray background */
-    color: #333;
-    border: 1px solid #d1d9e0;
+    background-color: #444; /* Darker gray background */
+    color: #f0f0f0;
+    border: 1px solid #555;
     font-family: 'Inter', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
@@ -244,20 +271,20 @@ body {
     box-shadow: none;
 }
 .btn-subtle:hover {
-    background-color: #dbe0e4;
-    border-color: #c3c9d1;
+    background-color: #555;
+    border-color: #666;
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .preview-container {
     margin-top: 30px;
     padding: 2rem;
-    background: #ffffff;
+    background: #2c2c2c; /* Dark panel background */
     border-radius: 12px;
     width: 100%;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border: 1px solid #444;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 .preview-header {
     font-size: 1.4rem;
@@ -265,12 +292,12 @@ body {
     margin-bottom: 1.5rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: #333;
+    color: #f0f0f0;
 }
 
-/* Journal Preview Styles (kept original for document format) */
+/* Journal Preview Styles (The document itself stays white to simulate print paper) */
 .journal-preview {
-    background: #fff;
+    background: #fff; /* Kept white for document contrast/print simulation */
     padding: 0.75in;
     border: 2pt solid #000;
     margin: 1rem 0;
@@ -283,7 +310,7 @@ body {
 .journal-line1 { display: flex; justify-content: space-between; margin-bottom: 1rem; font-weight: 400; padding-bottom: 1rem; }
 .journal-question { font-weight: 700; margin-bottom: 2rem; text-align: left; }
 .journal-content { margin-bottom: 2rem; page-break-inside: avoid; }
-.journal-filename { margin-bottom: 1rem; font-weight: 600; font-size: 16pt; } /* Slightly larger filename */
+.journal-filename { margin-bottom: 1rem; font-weight: 600; font-size: 16pt; }
 .journal-code {
     font-size: 12pt;
     font-family: 'Times New Roman', serif;
@@ -293,7 +320,7 @@ body {
     line-height: 1.3;
     text-align: left;
     word-wrap: break-word;
-    border: 1px dashed #ccc; /* Code box border */
+    border: 1px dashed #ccc;
     padding: 0.5rem;
 }
 .journal-code pre {
@@ -304,7 +331,7 @@ body {
     margin: 0;
 }
 .journal-output { text-align: center; }
-.journal-output-label { font-weight: 700; margin-bottom: 1rem; font-size: 14pt; color: #28a745; } /* Green label */
+.journal-output-label { font-weight: 700; margin-bottom: 1rem; font-size: 14pt; color: #5cb85c; } /* Success Green for dark theme */
 .journal-output img { max-width: 100%; height: auto; border: 1px solid #000; margin-top: 0.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 
 /* Message Styling */
@@ -317,8 +344,16 @@ body {
     text-align: center;
     font-size: 0.9rem;
 }
-.error-message { background: #fbe0e3; color: #a33b49; border: 1px solid #f8c0c8; }
-.status-message { background: #e0f2e0; color: #1e6c38; border: 1px solid #c9e0c9; }
+.error-message { 
+    background: #5c3030; 
+    color: #ffbaba; 
+    border: 1px solid #a33b49; 
+}
+.status-message { 
+    background: #305c30; 
+    color: #baffba; 
+    border: 1px solid #1e6c38; 
+}
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
