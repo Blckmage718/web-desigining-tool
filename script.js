@@ -83,15 +83,29 @@ const studentsData = [
     { id: '24BCADS001', name: 'ADGADE HARSHADA' }, { id: '24BCADS002', name: 'AHIR DIYA' }, { id: '24BCADS003', name: 'BHAKHATIYARPURE SAHIL' }, { id: '24BCADS005', name: 'CHANDOLE DARSHAN' }, { id: '24BCADS006', name: 'CHAUDHARI CHIRAG' }, { id: '24BCADS007', name: 'CHAUDHARI MARMIKKUMAR' }, { id: '24BCADS008', name: 'CHAUDHARI NAITIK' }, { id: '24BCADS009', name: 'CHAUDHARI NIRMALBHAI' }, { id: '24BCADS010', name: 'CHAUDHARI SONU' }, { id: '24BCADS011', name: 'CHAUDHARI VANSH' }, { id: '24BCADS012', name: 'CHAUDHARI YASHKUMAR' }, { id: '24BCADS013', name: 'CHAUHAN BHAKTI' }, { id: '24BCADS014', name: 'CHAUHAN BHUMIBEN' }, { id: '24BCADS015', name: 'CHAUHAN NIKUNJBHAI' }, { id: '24BCADS016', name: 'CHAUHAN PARTH' }, { id: '24BCADS017', name: 'DALAL PRATHAM' }, { id: '24BCADS018', name: 'DAS PURNIMA' }, { id: '24BCADS022', name: 'DESAI POORVABEN' }, { id: '24BCADS023', name: 'DHANGAR JAYKUMAR' }, { id: '24BCADS024', name: 'DHARIWAL AAKANSHA' }, { id: '24BCADS025', name: 'DHIMMAR MAHI' }, { id: '24BCADS026', name: 'DHOLE NEHA' }, { id: '24BCADS027', name: 'DOBARIYA YASHVI' }, { id: '24BCADS028', name: 'DOSHI PARTHKUMAR' }, { id: '24BCADS029', name: 'GAMIT TEJAS' }, { id: '24BCADS030', name: 'GANDHI KRISHNA' }, { id: '24BCADS031', name: 'GARASHIYA ANKUR' }, { id: '24BCADS032', name: 'GAUN MITKUMAR' }, { id: '24BCADS033', name: 'GHODASARA JENI' }, { id: '24BCADS034', name: 'HALPATI NILKUMAR' }, { id: '24BCADS035', name: 'JADAV ROHAN' }, { id: '24BCADS036', name: 'KAKULIT DOYAL' }, { id: '24BCADS037', name: 'KALAL YASH' }, { id: '24BCADS038', name: 'KANTHARIYA SAHILKUMAR' }, { id: '24BCADS039', name: 'MOHMAD AAKIL' }, { id: '24BCADS040', name: 'KEVAT MEHULBHAI' }, { id: '24BCADS041', name: 'LAKHARA HIMANSHU' }, { id: '24BCADS042', name: 'MACHHI KEVINKUMAR' }, { id: '24BCADS043', name: 'MAHYAVANSHI DHRUVKUMAR' }, { id: '24BCADS044', name: 'MAISURIYA DIYA' }, { id: '24BCADS045', name: 'MAJHI SUMITKUMAR' }, { id: '24BCADS046', name: 'MAYHAVANSHI VIVEK' }, { id: '24BCADS047', name: 'MEGHAT SHREYA' }, { id: '24BCADS048', name: 'MEMAN ABDULRAHMAN' }, { id: '24BCADS049', name: 'MISTRY DARSHANKUMAR' }, { id: '24BCADS050', name: 'MISTRY JAY' }, { id: '24BCADS051', name: 'MISTRY NENCY' }, { id: '24BCADS052', name: 'MISTRY RUSHIKUMAR' }, { id: '24BCADS053', name: 'MISTRY SHUCHI' }, { id: '24BCADS054', name: 'MISTRY SNEHA' }, { id: '24BCADS055', name: 'MISTRY TISHA' }, { id: '24BCADS056', name: 'MORI DHRUVILKUMAR' }, { id: '24BCADS057', name: 'MULTANI RUMANA' }, { id: '24BCADS058', name: 'MULTANI SANIYA' }, { id: '24BCADS059', name: 'PAGHADAL JIGARKUMAR' }, { id: '24BCADS060', name: 'PANCHAL BHUMI' }, { id: '24BCADS061', name: 'PANCHAL DIYA' }, { id: '24BCADS062', name: 'PANCHAL FENI' }, { id: '24BCADS063', name: 'PANCHAL HENI' }, { id: '24BCADS064', name: 'PANCHAL MEET' }, { id: '24BCADS065', name: 'PANCHAL POOJA' }, { id: '24BCADS066', name: 'PANCHAL RUDRAKUMAR' }, { id: '24BCADS067', name: 'PANCHAL SHIVAM' }, { id: '24BCADS068', name: 'PANCHAL SHRUTIBEN' }, { id: '24BCADS069', name: 'PANCHAL STUTY' }, { id: '24BCADS070', name: 'PANCHOLI HET' }, { id: '24BCADS071', 'name': 'PATANVADIYA RIYABEN' }, { id: '24BCADS072', name: 'PATEL AMI' }, { id: '24BCADS073', name: 'PATEL ARCHI' }, { id: '24BCADS074', name: 'PATEL BHUMI' }, { id: '24BCADS075', name: 'PATEL DAX' }, { id: '24BCADS076', name: 'PATEL DARSHAN' }, { id: '24BCADS077', name: 'PATEL DEVANSHIKUMARI' }, { id: '24BCADS078', name: 'PATEL DEVANSHU' }, { id: '24BCADS079', name: 'PATEL DHRUVI' }, { id: '24BCADS080', name: 'PATEL FENIL' }, { id: '24BCADS081', name: 'PATEL HENIL' }, { id: '24BCADS084', 'name': 'PATEL KASHISH' }, { id: '24BCADS085', name: 'PATEL KHUSHI' }
 ];
 
-// UPDATED: Changed from Journal 1 to Journal 4 with 7 questions.
+// UPDATED: Includes all journals (1, 2, 3, 4) with their respective questions from WD I-Journal.pdf
 const questionsData = [
-    { journal: 4, question: '1.Write a JavaScript program to display the current day and time.' },
-{ journal: 4, question: '2.Write a JavaScript program to get the current date.' },
-{ journal: 4, question: '3.Write a JavaScript program to determine whether a given year is a leap year.' },
-{ journal: 4, question: '4.Write a JavaScript program to calculate Addition and Subtraction of two numbers.' },
-{ journal: 4, question: '5.Write a JavaScript program to calculate multiplication and division of two numbers.' },
-{ journal: 4, question: '6.Write a JavaScript program to change the case of a string. (i.e upper case to lower case and vice-versa).' },
-{ journal: 4, question: '7.Develop and demonstrate an HTML file that includes JavaScript script for switching an image source for an image on click of "change" and "original" button.' }
+    // Journal 1
+    { journal: 1, question: '1. Write an HTML code for Timetable using external CSS.' },
+    { journal: 1, question: '2. Write an HTML code for Registration Form using inline CSS.' },
+    { journal: 1, question: '3. Write an HTML code for Resume using internal CSS.' },
+    
+    // Journal 2
+    { journal: 2, question: '1. Write an HTML code for Timetable using Bootstrap.' },
+    { journal: 2, question: '2. Write an HTML code for Registration Form using Bootstrap.' },
+    { journal: 2, question: '3. Write an HTML code for Resume using internal Bootstrap.' },
+    
+    // Journal 3
+    { journal: 3, question: '1. Create a Website using CSS, JAVASCRIPT and BOOTSTRAP.' }, // Rephrased/Numbered for consistency
+
+    // Journal 4
+    { journal: 4, question: '1. Write a JavaScript program to display the current day and time.' },
+    { journal: 4, question: '2. Write a JavaScript program to get the current date.' },
+    { journal: 4, question: '3. Write a JavaScript program to determine whether a given year is a leap year.' },
+    { journal: 4, question: '4. Write a JavaScript program to calculate Addition and Subtraction of two numbers.' },
+    { journal: 4, question: '5. Write a JavaScript program to calculate multiplication and division of two numbers.' },
+    { journal: 4, question: '6. Write a JavaScript program to change the case of a string. (i.e upper case to lower case and vice-versa).' },
+    { journal: 4, question: '7. Develop and demonstrate a HTML file that includes JavaScript script for switching an image source for an image on click of "change" and "original" button.' }
 ];
 
 // Global variables
@@ -122,8 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
     populateStudentDatalist();
     populateJournalNumbers();
-    // NEW: Set default to Journal 4 and populate questions immediately on load
-    journalNumberSelect.value = 4;
+    // NEW: Set default to first journal (Journal 1) and populate questions immediately on load
+    // Using the first available journal number dynamically
+    const firstJournalNumber = questionsData.map(q => q.journal).sort((a, b) => a - b)[0];
+    journalNumberSelect.value = firstJournalNumber;
     handleJournalNumberChange({ target: journalNumberSelect });
     addUploader('code', false); // Add initial uploader without opening file dialog
 });
@@ -153,8 +169,9 @@ function populateStudentDatalist() {
 }
 
 function populateJournalNumbers() {
-    // Only includes Journal 4 now, but keeps structure for future journals
+    // Get unique and sorted journal numbers
     const journals = [...new Set(questionsData.map(q => q.journal))].sort((a, b) => a - b);
+    journalNumberSelect.innerHTML = '<option value="">Select Journal</option>'; // Reset
     journals.forEach(journal => {
         const option = document.createElement('option');
         option.value = journal;
@@ -374,7 +391,9 @@ async function downloadWord() {
 
         const lastThreeDigits = selectedStudent.id.slice(-3);
         const journalNumber = selectedQuestion.journal;
-        const questionNumber = selectedQuestion.question.substring(0, 1);
+        // Extract only the question number (e.g., '1', '2', '3')
+        const questionNumberMatch = selectedQuestion.question.match(/^(\d+)/);
+        const questionNumber = questionNumberMatch ? questionNumberMatch[1] : 'Q';
         const newFilenameBase = `${lastThreeDigits}_j${journalNumber}_${questionNumber}`;
 
         const { Document, Packer, Paragraph, TextRun, AlignmentType, PageBreak, BorderStyle, Table, TableRow, TableCell, WidthType, ImageRun, Footer, PageNumber, PageBorderDisplay } = docx;
@@ -487,7 +506,9 @@ async function downloadPdf() {
 
         const lastThreeDigits = selectedStudent.id.slice(-3);
         const journalNumber = selectedQuestion.journal;
-        const questionNumber = selectedQuestion.question.substring(0, 1);
+        // Extract only the question number (e.g., '1', '2', '3')
+        const questionNumberMatch = selectedQuestion.question.match(/^(\d+)/);
+        const questionNumber = questionNumberMatch ? questionNumberMatch[1] : 'Q';
         const newFilenameBase = `${lastThreeDigits}_j${journalNumber}_${questionNumber}`;
 
         const { jsPDF } = jspdf;
@@ -526,10 +547,16 @@ async function downloadPdf() {
             const upload = uploads[i];
             if (!upload.file) continue;
 
+            // Ensure a new page for subsequent uploads, especially images
             if (i > 0) {
                 doc.addPage();
                 yPosition = contentMargin;
+            } else if (upload.type === 'image' && yPosition > contentMargin) {
+                // If it's the first upload but the question took up too much space, or we're at the top
+                doc.addPage();
+                yPosition = contentMargin;
             }
+
 
             if (upload.type === 'code') {
                 const codeTitleHeight = (14 / 72 * 1.2) + 0.1;
@@ -564,13 +591,8 @@ async function downloadPdf() {
 
             } else if (upload.type === 'image') {
                 try {
-                    if (i > 0) {
-                        // Page was already added.
-                    } else if (yPosition > contentMargin) {
-                        doc.addPage();
-                        yPosition = contentMargin;
-                    }
-
+                    // Page was already added by the logic above or it's the first upload and it was decided to put on a new page.
+                    
                     const outputLabelHeight = (14 / 72 * 1.2) + 0.2;
                     const img = new Image();
                     img.src = upload.file.content;
@@ -580,10 +602,14 @@ async function downloadPdf() {
                     let imgWidth = contentWidth;
                     let imgHeight = imgWidth / imgRatio;
 
-                    const maxImgHeight = bottomMargin - contentMargin - outputLabelHeight;
+                    const maxImgHeight = bottomMargin - yPosition - outputLabelHeight;
                     if (imgHeight > maxImgHeight) {
                         imgHeight = maxImgHeight;
                         imgWidth = imgHeight * imgRatio;
+                        if (imgWidth > contentWidth) { // Check if new width is also too big
+                            imgWidth = contentWidth;
+                            imgHeight = imgWidth / imgRatio;
+                        }
                     }
 
                     doc.setFont('times', 'bold');
@@ -591,8 +617,16 @@ async function downloadPdf() {
                     doc.text('OUTPUT:', pageWidth / 2, yPosition, { align: 'center' });
                     yPosition += outputLabelHeight;
 
+                    if (yPosition + imgHeight > bottomMargin) {
+                        doc.addPage();
+                        yPosition = contentMargin + outputLabelHeight;
+                    }
+
                     const imgX = (pageWidth - imgWidth) / 2;
                     doc.addImage(img, 'PNG', imgX, yPosition, imgWidth, imgHeight);
+
+                    yPosition += imgHeight + 0.2; // Move yPosition past the image
+
                 } catch (imgError) {
                     if (yPosition > bottomMargin) {
                         doc.addPage();
@@ -600,6 +634,7 @@ async function downloadPdf() {
                     }
                     console.error('Error processing screenshot for PDF:', imgError);
                     doc.text('Error: Could not load image.', contentMargin, yPosition);
+                    yPosition += 0.2;
                 }
             }
         }
